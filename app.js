@@ -31,26 +31,18 @@ app.get("/", (req, res) => {
        title: "weatherWEB",
        layout: './layouts/full-width',
        text: "Hello, this is ejs",
-        channelName: "suyash",
-        hellYeah: "sexy hai bhai nodejs ekdum"
    });
 });
 app.get("/about", (req, res) => {
     res.render("about_body", {
         title: "weatherWEB",
         layout: './layouts/about',
-       mongo: "Hello, this is the about page of ejs",
-        myName: "suyashSuyashSUYASH",
-        hellYeah: "sexy hai bhai nodejs ekdum"
     });  
 }); 
 app.get("/weather", (req, res) => {
     res.render("weather_body", {
         title: "weatherWEB",
         layout: './layouts/weather',
-       mongo: "Hello, this is the weather page of ejs",
-        myName: "suyashSuyashSUYASH",
-        hellYeah: "sexy hai bhai nodejs ekdum"
     });  
 }); 
 
