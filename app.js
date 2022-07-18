@@ -21,38 +21,38 @@ app.use('/css', express.static(__dirname + 'public/css'));
 //set views or templating engine
 app.set('views', './views');
 app.set('view engine', 'ejs');
-app.use(expressLayouts); 
+app.use(expressLayouts);
 //app.set('layout', './layouts/full-width'); //static enviroment created and now removed for not creating confusion
 
 
 //template engine route or navigation
 app.get("/", (req, res) => {
- res.render("index", {
-       title: "weatherWEB",
-       layout: './layouts/full-width',
-       text: "Hello, this is ejs",
-   });
+    res.render("index", {
+        title: "WeatherWeb",
+        layout: './layouts/full-width',
+        text: "Hello, this is ejs",
+    });
 });
 app.get("/about", (req, res) => {
     res.render("about_body", {
-        title: "weatherWEB",
+        title: "WeatherWeb",
         layout: './layouts/about',
-    });  
-}); 
+    });
+});
 app.get("/weather", (req, res) => {
     res.render("weather_body", {
-        title: "weatherWEB",
+        title: "WeatherWeb",
         layout: './layouts/weather',
-    });  
-}); 
+    });
+});
 
 app.get("", (req, res) => {
-    res.send("hello from the express server"); 
+    res.send("hello from the express server");
 });
 app.get("/about", (req, res) => {
     res.send("hello from the express server to about page");
 });
- 
+
 
 
 /* 

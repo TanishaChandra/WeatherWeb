@@ -68,6 +68,7 @@ body {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -91,7 +92,7 @@ body {
 .main_header_left h1 {
   font-size: 4rem;
   margin: 1rem 0 4rem 0;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
 }
 
 .txt_clr {
@@ -188,7 +189,7 @@ body {
   justify-content: space-between;
   align-items: center;
   border-radius: 1rem;
-  padding: 2rem ;
+  padding: 2rem;
 }
 
 .top_layer p {
@@ -279,6 +280,7 @@ footer p {
   .temp_form {
     width: auto;
   }
+
   .tempInformation {
     width: auto;
   }
